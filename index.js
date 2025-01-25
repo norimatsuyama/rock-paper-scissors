@@ -15,10 +15,10 @@ function getComputerChoise() {
 
 
 function getHumanChoise(){
-    /*while (!["rock", "paper", "scissors"].includes(humanChoice)) {
-        humanChoice = prompt("Invalid choice. Please type Rock, Paper, or Scissors:").toLowerCase();
-    }*/
     let humanChoise = prompt("Rock, Paper, Scissors, GO!").toLowerCase()
+    while (!["rock", "paper", "scissors"].includes(humanChoise)) {
+        humanChoise = prompt("Invalid choice. Please type Rock, Paper, or Scissors:").toLowerCase();
+    }
     console.log(`You chose: ${humanChoise}`);
     return humanChoise;
 }
