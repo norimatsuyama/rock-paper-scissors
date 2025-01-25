@@ -31,8 +31,7 @@ function playRound(humanChoise, computerChoise){
         (humanChoise === "rock") && (computerChoise == "scissors") ||
         (humanChoise === "paper") && (computerChoise === "rock") ||
         (humanChoise === "scissors") && (computerChoise) 
-    ){
-        //humanScore += 1    
+    ){   
         console.log(`You Win! ${humanChoise.charAt(0).toUpperCase() + humanChoise.slice(1)} beats ${computerChoise}`);
         return "human";
         }
@@ -41,8 +40,7 @@ function playRound(humanChoise, computerChoise){
         (humanChoise == "rock") && (computerChoise == "paper") ||
         (humanChoise === "paper") && (computerChoise === "scissors") ||
         (humanChoise === "scissors") && (computerChoise === "rock") 
-    ) {
-        //computerScore += 1 
+    ) { 
         console.log(`You Loose! ${computerChoise.charAt(0).toUpperCase() + computerChoise.slice(1)} beats ${humanChoise}!`);
          return "computer"
     }
